@@ -143,7 +143,7 @@ For fine-grained control, you can override platform-specific shadow properties:
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `shadowSize` | `'none' \| 'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl'` | `'md'` | Predefined shadow size preset |
-| `shadowColor` | `string` | Platform dependent | Custom shadow color (hex, rgba, etc.) |
+| `shadowColor` | `string` | 'black' | Custom shadow color (hex, rgba, etc.) |
 | `iosShadowStyle` | `object` | `undefined` | iOS-specific shadow style overrides |
 | `androidShadowStyle` | `object` | `undefined` | Android-specific shadow style overrides |
 | `style` | `ViewStyle` | `undefined` | Additional styles for the container |
