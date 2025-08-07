@@ -34,6 +34,11 @@ export interface DropShadowViewProps extends ViewProps {
   children?: React.ReactNode;
 
   /**
+   * Class name for the component (NativeWind support)
+   */
+  className?: string;
+
+  /**
    * Shadow size preset
    * @default 'md'
    */
