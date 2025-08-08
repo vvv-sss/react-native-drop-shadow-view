@@ -10,7 +10,6 @@ import {
 const DropShadowView = forwardRef<View, DropShadowViewProps>((props, ref) => {
   const {
     children,
-    className,
     style,
     shadowSize = 'md',
     shadowColor,
@@ -32,13 +31,7 @@ const DropShadowView = forwardRef<View, DropShadowViewProps>((props, ref) => {
     };
 
     return (
-      <View
-        ref={ref}
-        // @ts-ignore
-        className={className}
-        style={[androidShadowStyles, style]}
-        {...restProps}
-      >
+      <View ref={ref} style={[androidShadowStyles, style]} {...restProps}>
         {children}
       </View>
     );
@@ -51,13 +44,7 @@ const DropShadowView = forwardRef<View, DropShadowViewProps>((props, ref) => {
   };
 
   return (
-    <View
-      ref={ref}
-      // @ts-ignore
-      className={className}
-      style={[iosShadowStyles, style]}
-      {...restProps}
-    >
+    <View ref={ref} style={[iosShadowStyles, style]} {...restProps}>
       {children}
     </View>
   );
